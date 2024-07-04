@@ -11,7 +11,7 @@
         android:id="@+id/imageView2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="60dp"
         android:scaleType="centerCrop"
         android:src="@drawable/street_food_logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,8 +25,9 @@
         android:layout_width="0dp"
         android:layout_height="108dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
+        android:padding="20dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -141,7 +142,7 @@
         android:id="@+id/addMenuCard"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="20dp"
         app:layout_constraintEnd_toStartOf="@+id/addAllMenuCard"
@@ -177,7 +178,7 @@
         android:id="@+id/addAllMenuCard"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -193,8 +194,8 @@
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:padding="20dp"
                 app:srcCompat="@drawable/eye" />
 
@@ -204,8 +205,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textStyle="bold"
-                android:text="Add All Menu" />
+                android:text="Add All Menu"
+                android:textStyle="bold" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
