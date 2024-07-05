@@ -2,10 +2,7 @@ package com.example.streetfoodadmin
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.streetfoodadmin.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -31,6 +28,14 @@ class MainActivity : AppCompatActivity() {
         }
         binding.adminProfileCard.setOnClickListener {
             val intent = Intent(this,AdminProfile::class.java)
+            startActivity(intent)
+        }
+        binding.createNewUserCard.setOnClickListener {
+            val intent = Intent(this,CreateNewUserActivity::class.java)
+            startActivity(intent)
+        }
+        binding.pendingOrderLinearLayout.setOnClickListener {
+            val intent = Intent(this,PendingOrderActivity::class.java)
             startActivity(intent)
         }
     }
