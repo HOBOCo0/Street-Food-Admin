@@ -25,5 +25,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,All_Items_Activity::class.java)
             startActivity(intent)
         }
+        binding.dispatchOrderCard.setOnClickListener {
+            val intent = Intent(this,OutForDeliveryActivity::class.java)
+            startActivity(intent)
+        }
+        binding.adminProfileCard.setOnClickListener {
+            val intent = Intent(this,AdminProfile::class.java)
+            startActivity(intent)
+        }
     }
 }
