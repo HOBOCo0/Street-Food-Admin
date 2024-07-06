@@ -117,37 +117,43 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-// launcher for google signIn
-    private val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
-        result->
-        if (result.resultCode == Activity.RESULT_OK){
-           val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
-            if (task.isSuccessful){
-                val account: GoogleSignInAccount = task.result
-                val credentials = GoogleAuthProvider.getCredential(account.idToken,null)
-                auth.signInWithCredential(credentials).addOnCompleteListener { authTask->
-                    if(authTask.isSuccessful){
-                        // successful sign in with google
-                        Toast.makeText(this,"Successfully sign-in with google",Toast.LENGTH_SHORT).show()
-                        updateUi(authTask.result?.user)
-                    }else{
-                        Toast.makeText(this,"Google Sign-in Failed",Toast.LENGTH_SHORT).show()
+    // launcher for google signIn
+    private val launcher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            if (result.resultCode == Activity.RESULT_OK) {
+                val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
+                if (task.isSuccessful) {
+                    val account: GoogleSignInAccount = task.result
+                    val credentials = GoogleAuthProvider.getCredential(account.idToken, null)
+                    auth.signInWithCredential(credentials).addOnCompleteListener { authTask ->
+                        if (authTask.isSuccessful) {
+                            // successful sign in with google
+                            Toast.makeText(
+                                this,
+                                "Successfully sign-in with google",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                            updateUi(authTask.result?.user)
+                        } else {
+                            Toast.makeText(this, "Google Sign-in Failed", Toast.LENGTH_SHORT).show()
+                        }
                     }
+                } else {
+                    Toast.makeText(this, "Google Sign-in Failed", Toast.LENGTH_SHORT).show()
                 }
-            }else{
-                Toast.makeText(this,"Google Sign-in Failed",Toast.LENGTH_SHORT).show()
             }
         }
-    }
+
     // check if user is already login
     override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser
-        if(currentUser!=null){
-            startActivity((Intent(this,MainActivity::class.java)))
+        if (currentUser != null) {
+            startActivity((Intent(this, MainActivity::class.java)))
             finish()
         }
     }
+
     private fun updateUi(user: FirebaseUser?) {
         startActivity(Intent(this, MainActivity::class.java))
         finish()
