@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "712820774496",
+    "firebase_url": "https://street-food-537cb-default-rtdb.firebaseio.com",
+    "project_id": "street-food-537cb",
+    "storage_bucket": "street-food-537cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712820774496:android:9c65d031c7a67703919505",
+        "android_client_info": {
+          "package_name": "com.example.streetfoodadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712820774496-df9sein7r0lqlhvrdtna9krk3n4rrar0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.streetfoodadmin",
+            "certificate_hash": "d7c609a7f52257205e8afc93ecf1413a6ee5bac7"
+          }
+        },
+        {
+          "client_id": "712820774496-s5o8lcbgl4rpvtgb8hbe6rm930irgqui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD82LoqFTe82CQGZ6QFFdXy6sk_pOY12OA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712820774496-s5o8lcbgl4rpvtgb8hbe6rm930irgqui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

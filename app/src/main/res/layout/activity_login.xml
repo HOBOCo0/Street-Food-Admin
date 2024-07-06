@@ -90,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/signInFacebookButton"
+        android:id="@+id/signInGoogleButton"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -116,7 +116,7 @@
         android:text="Facebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/signInFacebookButton"
+        app:layout_constraintStart_toEndOf="@+id/signInGoogleButton"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -128,7 +128,7 @@
         android:elevation="5dp"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="@+id/signInFbButton"
-        app:layout_constraintStart_toStartOf="@+id/signInFacebookButton"
+        app:layout_constraintStart_toStartOf="@+id/signInGoogleButton"
         app:layout_constraintTop_toBottomOf="@+id/signInFbButton" />
 
     <TextView
