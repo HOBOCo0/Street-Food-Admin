@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <EditText
-        android:id="@+id/editTextRestaurantName"
+        android:id="@+id/restaurantName"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="15dp"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/userName" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/emailAddress"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="15dp"
@@ -80,13 +80,13 @@
         android:hint=" Email or Phone Number"
         android:inputType="textEmailAddress"
         android:paddingStart="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextRestaurantName"
+        app:layout_constraintEnd_toEndOf="@+id/restaurantName"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextRestaurantName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRestaurantName" />
+        app:layout_constraintStart_toStartOf="@+id/restaurantName"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantName" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/password"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="15dp"
@@ -98,9 +98,9 @@
         android:hint="Passward"
         android:inputType="textPassword"
         android:paddingStart="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintEnd_toEndOf="@+id/emailAddress"
+        app:layout_constraintStart_toStartOf="@+id/emailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/createAccountButton"
@@ -111,9 +111,9 @@
         android:elevation="5dp"
         android:padding="10dp"
         android:text="Create Account"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <TextView
         android:id="@+id/haveAccountButton"
