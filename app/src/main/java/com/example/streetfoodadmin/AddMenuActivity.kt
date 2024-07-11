@@ -1,16 +1,10 @@
 package com.example.streetfoodadmin
 
-import android.app.Instrumentation.ActivityResult
-import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
-import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.streetfoodadmin.databinding.ActivityAddMenuBinding
 import com.example.streetfoodadmin.model.AllMenu
 import com.google.firebase.auth.FirebaseAuth
@@ -120,7 +114,7 @@ class AddMenuActivity : AppCompatActivity() {
     }
 
     // to pick an image from the device's media gallery and display it in an ImageView.
-    private val pickImage = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
+    private val pickImage = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
         if (uri != null) {
             binding.selectedImage.setImageURI(uri)
             foodImageUri = uri
